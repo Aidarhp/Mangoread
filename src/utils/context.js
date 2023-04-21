@@ -35,8 +35,8 @@ const Context = (props) => {
   }, [searchQuery]);
 
   useEffect(() => {
-    getProfile()
-  },[])
+    getProfile();
+  }, []);
   const changeGenre = (value) => {
     setGenre(value);
     setCheckboxes({ ...checkboxes, [value]: !checkboxes[value] });
